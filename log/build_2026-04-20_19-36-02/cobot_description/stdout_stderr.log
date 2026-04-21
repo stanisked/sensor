@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/cobot_description/cobot_description.egg-info
+writing ../../build/cobot_description/cobot_description.egg-info/PKG-INFO
+writing dependency_links to ../../build/cobot_description/cobot_description.egg-info/dependency_links.txt
+writing requirements to ../../build/cobot_description/cobot_description.egg-info/requires.txt
+writing top-level names to ../../build/cobot_description/cobot_description.egg-info/top_level.txt
+writing manifest file '../../build/cobot_description/cobot_description.egg-info/SOURCES.txt'
+reading manifest file '../../build/cobot_description/cobot_description.egg-info/SOURCES.txt'
+writing manifest file '../../build/cobot_description/cobot_description.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/stanislav/cobot_ws/build/cobot_description/build
+creating /home/stanislav/cobot_ws/build/cobot_description/build/lib
+creating /home/stanislav/cobot_ws/build/cobot_description/build/lib/cobot_description
+copying cobot_description/__init__.py -> /home/stanislav/cobot_ws/build/cobot_description/build/lib/cobot_description
+running install
+running install_lib
+creating /home/stanislav/cobot_ws/install/cobot_description/lib/python3.12/site-packages/cobot_description
+copying /home/stanislav/cobot_ws/build/cobot_description/build/lib/cobot_description/__init__.py -> /home/stanislav/cobot_ws/install/cobot_description/lib/python3.12/site-packages/cobot_description
+byte-compiling /home/stanislav/cobot_ws/install/cobot_description/lib/python3.12/site-packages/cobot_description/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/stanislav/cobot_ws/install/cobot_description/share/ament_index
+creating /home/stanislav/cobot_ws/install/cobot_description/share/ament_index/resource_index
+creating /home/stanislav/cobot_ws/install/cobot_description/share/ament_index/resource_index/packages
+copying resource/cobot_description -> /home/stanislav/cobot_ws/install/cobot_description/share/ament_index/resource_index/packages
+copying package.xml -> /home/stanislav/cobot_ws/install/cobot_description/share/cobot_description
+creating /home/stanislav/cobot_ws/install/cobot_description/share/cobot_description/urdf
+copying urdf/cobot.urdf -> /home/stanislav/cobot_ws/install/cobot_description/share/cobot_description/urdf
+running install_egg_info
+Copying ../../build/cobot_description/cobot_description.egg-info to /home/stanislav/cobot_ws/install/cobot_description/lib/python3.12/site-packages/cobot_description-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/stanislav/cobot_ws/build/cobot_description/install.log'

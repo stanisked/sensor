@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/cobot_bringup/cobot_bringup.egg-info/PKG-INFO
+../../build/cobot_bringup/cobot_bringup.egg-info/SOURCES.txt
+../../build/cobot_bringup/cobot_bringup.egg-info/dependency_links.txt
+../../build/cobot_bringup/cobot_bringup.egg-info/requires.txt
+../../build/cobot_bringup/cobot_bringup.egg-info/top_level.txt
+../../build/cobot_bringup/cobot_bringup.egg-info/zip-safe
+cobot_bringup/__init__.py
+config/controllers.yaml
+launch/bringup.launch.py
+resource/cobot_bringup
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

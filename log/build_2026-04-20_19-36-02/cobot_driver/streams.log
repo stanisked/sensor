@@ -1,0 +1,34 @@
+[2.087s] Invoking command in '/home/stanislav/cobot_ws/src/cobot_driver': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stanislav/cobot_ws/build/cobot_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stanislav/cobot_ws/install/cobot_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cobot_driver build --build-base /home/stanislav/cobot_ws/build/cobot_driver/build install --record /home/stanislav/cobot_ws/build/cobot_driver/install.log --single-version-externally-managed
+[2.466s] running egg_info
+[2.466s] creating ../../build/cobot_driver/cobot_driver.egg-info
+[2.498s] writing ../../build/cobot_driver/cobot_driver.egg-info/PKG-INFO
+[2.499s] writing dependency_links to ../../build/cobot_driver/cobot_driver.egg-info/dependency_links.txt
+[2.499s] writing entry points to ../../build/cobot_driver/cobot_driver.egg-info/entry_points.txt
+[2.499s] writing requirements to ../../build/cobot_driver/cobot_driver.egg-info/requires.txt
+[2.499s] writing top-level names to ../../build/cobot_driver/cobot_driver.egg-info/top_level.txt
+[2.499s] writing manifest file '../../build/cobot_driver/cobot_driver.egg-info/SOURCES.txt'
+[2.563s] reading manifest file '../../build/cobot_driver/cobot_driver.egg-info/SOURCES.txt'
+[2.564s] writing manifest file '../../build/cobot_driver/cobot_driver.egg-info/SOURCES.txt'
+[2.564s] running build
+[2.564s] running build_py
+[2.564s] creating /home/stanislav/cobot_ws/build/cobot_driver/build
+[2.565s] creating /home/stanislav/cobot_ws/build/cobot_driver/build/lib
+[2.565s] creating /home/stanislav/cobot_ws/build/cobot_driver/build/lib/cobot_driver
+[2.565s] copying cobot_driver/servo_bridge_node.py -> /home/stanislav/cobot_ws/build/cobot_driver/build/lib/cobot_driver
+[2.565s] copying cobot_driver/__init__.py -> /home/stanislav/cobot_ws/build/cobot_driver/build/lib/cobot_driver
+[2.565s] copying cobot_driver/servo_driver_node.py -> /home/stanislav/cobot_ws/build/cobot_driver/build/lib/cobot_driver
+[2.566s] running install
+[2.575s] running install_lib
+[2.607s] creating /home/stanislav/cobot_ws/install/cobot_driver/lib/python3.12/site-packages/cobot_driver
+[2.607s] copying /home/stanislav/cobot_ws/build/cobot_driver/build/lib/cobot_driver/servo_bridge_node.py -> /home/stanislav/cobot_ws/install/cobot_driver/lib/python3.12/site-packages/cobot_driver
+[2.607s] copying /home/stanislav/cobot_ws/build/cobot_driver/build/lib/cobot_driver/__init__.py -> /home/stanislav/cobot_ws/install/cobot_driver/lib/python3.12/site-packages/cobot_driver
+[2.608s] copying /home/stanislav/cobot_ws/build/cobot_driver/build/lib/cobot_driver/servo_driver_node.py -> /home/stanislav/cobot_ws/install/cobot_driver/lib/python3.12/site-packages/cobot_driver
+[2.608s] byte-compiling /home/stanislav/cobot_ws/install/cobot_driver/lib/python3.12/site-packages/cobot_driver/servo_bridge_node.py to servo_bridge_node.cpython-312.pyc
+[2.610s] byte-compiling /home/stanislav/cobot_ws/install/cobot_driver/lib/python3.12/site-packages/cobot_driver/__init__.py to __init__.cpython-312.pyc
+[2.610s] byte-compiling /home/stanislav/cobot_ws/install/cobot_driver/lib/python3.12/site-packages/cobot_driver/servo_driver_node.py to servo_driver_node.cpython-312.pyc
+[2.612s] running install_egg_info
+[2.645s] Copying ../../build/cobot_driver/cobot_driver.egg-info to /home/stanislav/cobot_ws/install/cobot_driver/lib/python3.12/site-packages/cobot_driver-0.0.1-py3.12.egg-info
+[2.647s] running install_scripts
+[2.859s] Installing servo_bridge script to /home/stanislav/cobot_ws/install/cobot_driver/lib/cobot_driver
+[2.860s] writing list of installed files to '/home/stanislav/cobot_ws/build/cobot_driver/install.log'
+[2.924s] Invoked command in '/home/stanislav/cobot_ws/src/cobot_driver' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stanislav/cobot_ws/build/cobot_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stanislav/cobot_ws/install/cobot_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cobot_driver build --build-base /home/stanislav/cobot_ws/build/cobot_driver/build install --record /home/stanislav/cobot_ws/build/cobot_driver/install.log --single-version-externally-managed

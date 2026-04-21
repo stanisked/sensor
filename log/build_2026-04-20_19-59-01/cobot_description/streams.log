@@ -1,0 +1,19 @@
+[2.113s] Invoking command in '/home/stanislav/cobot_ws/src/cobot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stanislav/cobot_ws/build/cobot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stanislav/cobot_ws/install/cobot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cobot_description build --build-base /home/stanislav/cobot_ws/build/cobot_description/build install --record /home/stanislav/cobot_ws/build/cobot_description/install.log --single-version-externally-managed install_data
+[2.541s] running egg_info
+[2.572s] writing ../../build/cobot_description/cobot_description.egg-info/PKG-INFO
+[2.573s] writing dependency_links to ../../build/cobot_description/cobot_description.egg-info/dependency_links.txt
+[2.573s] writing requirements to ../../build/cobot_description/cobot_description.egg-info/requires.txt
+[2.573s] writing top-level names to ../../build/cobot_description/cobot_description.egg-info/top_level.txt
+[2.639s] reading manifest file '../../build/cobot_description/cobot_description.egg-info/SOURCES.txt'
+[2.640s] writing manifest file '../../build/cobot_description/cobot_description.egg-info/SOURCES.txt'
+[2.640s] running build
+[2.640s] running build_py
+[2.641s] running install
+[2.650s] running install_lib
+[2.684s] running install_data
+[2.684s] running install_egg_info
+[2.719s] removing '/home/stanislav/cobot_ws/install/cobot_description/lib/python3.12/site-packages/cobot_description-0.0.0-py3.12.egg-info' (and everything under it)
+[2.720s] Copying ../../build/cobot_description/cobot_description.egg-info to /home/stanislav/cobot_ws/install/cobot_description/lib/python3.12/site-packages/cobot_description-0.0.0-py3.12.egg-info
+[2.721s] running install_scripts
+[2.931s] writing list of installed files to '/home/stanislav/cobot_ws/build/cobot_description/install.log'
+[2.991s] Invoked command in '/home/stanislav/cobot_ws/src/cobot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stanislav/cobot_ws/build/cobot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stanislav/cobot_ws/install/cobot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cobot_description build --build-base /home/stanislav/cobot_ws/build/cobot_description/build install --record /home/stanislav/cobot_ws/build/cobot_description/install.log --single-version-externally-managed install_data

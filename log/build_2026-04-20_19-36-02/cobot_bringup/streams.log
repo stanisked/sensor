@@ -1,0 +1,36 @@
+[2.097s] Invoking command in '/home/stanislav/cobot_ws/src/cobot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stanislav/cobot_ws/build/cobot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stanislav/cobot_ws/install/cobot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cobot_bringup build --build-base /home/stanislav/cobot_ws/build/cobot_bringup/build install --record /home/stanislav/cobot_ws/build/cobot_bringup/install.log --single-version-externally-managed install_data
+[2.521s] running egg_info
+[2.522s] creating ../../build/cobot_bringup/cobot_bringup.egg-info
+[2.552s] writing ../../build/cobot_bringup/cobot_bringup.egg-info/PKG-INFO
+[2.553s] writing dependency_links to ../../build/cobot_bringup/cobot_bringup.egg-info/dependency_links.txt
+[2.553s] writing requirements to ../../build/cobot_bringup/cobot_bringup.egg-info/requires.txt
+[2.553s] writing top-level names to ../../build/cobot_bringup/cobot_bringup.egg-info/top_level.txt
+[2.553s] writing manifest file '../../build/cobot_bringup/cobot_bringup.egg-info/SOURCES.txt'
+[2.618s] reading manifest file '../../build/cobot_bringup/cobot_bringup.egg-info/SOURCES.txt'
+[2.619s] writing manifest file '../../build/cobot_bringup/cobot_bringup.egg-info/SOURCES.txt'
+[2.619s] running build
+[2.619s] running build_py
+[2.620s] creating /home/stanislav/cobot_ws/build/cobot_bringup/build
+[2.620s] creating /home/stanislav/cobot_ws/build/cobot_bringup/build/lib
+[2.620s] creating /home/stanislav/cobot_ws/build/cobot_bringup/build/lib/cobot_bringup
+[2.620s] copying cobot_bringup/__init__.py -> /home/stanislav/cobot_ws/build/cobot_bringup/build/lib/cobot_bringup
+[2.620s] running install
+[2.631s] running install_lib
+[2.663s] creating /home/stanislav/cobot_ws/install/cobot_bringup/lib/python3.12/site-packages/cobot_bringup
+[2.663s] copying /home/stanislav/cobot_ws/build/cobot_bringup/build/lib/cobot_bringup/__init__.py -> /home/stanislav/cobot_ws/install/cobot_bringup/lib/python3.12/site-packages/cobot_bringup
+[2.664s] byte-compiling /home/stanislav/cobot_ws/install/cobot_bringup/lib/python3.12/site-packages/cobot_bringup/__init__.py to __init__.cpython-312.pyc
+[2.664s] running install_data
+[2.664s] creating /home/stanislav/cobot_ws/install/cobot_bringup/share/ament_index
+[2.664s] creating /home/stanislav/cobot_ws/install/cobot_bringup/share/ament_index/resource_index
+[2.665s] creating /home/stanislav/cobot_ws/install/cobot_bringup/share/ament_index/resource_index/packages
+[2.665s] copying resource/cobot_bringup -> /home/stanislav/cobot_ws/install/cobot_bringup/share/ament_index/resource_index/packages
+[2.665s] copying package.xml -> /home/stanislav/cobot_ws/install/cobot_bringup/share/cobot_bringup
+[2.665s] creating /home/stanislav/cobot_ws/install/cobot_bringup/share/cobot_bringup/launch
+[2.665s] copying launch/bringup.launch.py -> /home/stanislav/cobot_ws/install/cobot_bringup/share/cobot_bringup/launch
+[2.666s] creating /home/stanislav/cobot_ws/install/cobot_bringup/share/cobot_bringup/config
+[2.666s] copying config/controllers.yaml -> /home/stanislav/cobot_ws/install/cobot_bringup/share/cobot_bringup/config
+[2.666s] running install_egg_info
+[2.699s] Copying ../../build/cobot_bringup/cobot_bringup.egg-info to /home/stanislav/cobot_ws/install/cobot_bringup/lib/python3.12/site-packages/cobot_bringup-0.0.1-py3.12.egg-info
+[2.701s] running install_scripts
+[2.914s] writing list of installed files to '/home/stanislav/cobot_ws/build/cobot_bringup/install.log'
+[2.981s] Invoked command in '/home/stanislav/cobot_ws/src/cobot_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stanislav/cobot_ws/build/cobot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stanislav/cobot_ws/install/cobot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cobot_bringup build --build-base /home/stanislav/cobot_ws/build/cobot_bringup/build install --record /home/stanislav/cobot_ws/build/cobot_bringup/install.log --single-version-externally-managed install_data
