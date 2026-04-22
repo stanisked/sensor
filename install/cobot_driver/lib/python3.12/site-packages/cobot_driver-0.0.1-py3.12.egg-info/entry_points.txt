@@ -1,2 +1,0 @@
-[console_scripts]
-servo_bridge = cobot_driver.servo_bridge_node:main

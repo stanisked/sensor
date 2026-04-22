@@ -1,9 +1,0 @@
-/home/stanislav/cobot_ws/build/cobot_moveit_config/CMakeFiles/uninstall.dir
-/home/stanislav/cobot_ws/build/cobot_moveit_config/CMakeFiles/cobot_moveit_config_uninstall.dir
-/home/stanislav/cobot_ws/build/cobot_moveit_config/CMakeFiles/test.dir
-/home/stanislav/cobot_ws/build/cobot_moveit_config/CMakeFiles/edit_cache.dir
-/home/stanislav/cobot_ws/build/cobot_moveit_config/CMakeFiles/rebuild_cache.dir
-/home/stanislav/cobot_ws/build/cobot_moveit_config/CMakeFiles/list_install_components.dir
-/home/stanislav/cobot_ws/build/cobot_moveit_config/CMakeFiles/install.dir
-/home/stanislav/cobot_ws/build/cobot_moveit_config/CMakeFiles/install/local.dir
-/home/stanislav/cobot_ws/build/cobot_moveit_config/CMakeFiles/install/strip.dir

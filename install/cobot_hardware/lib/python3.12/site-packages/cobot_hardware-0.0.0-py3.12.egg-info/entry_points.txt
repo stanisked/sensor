@@ -1,2 +1,0 @@
-[hardware_interface]
-cobot_hardware/servo_hardware = cobot_hardware.servo_hardware:ServoHardware
