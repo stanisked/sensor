@@ -35,10 +35,9 @@
     <limit lower="-2.0" upper="2.0" effort="1" velocity="1"/>
   </joint>
 
-  <ros2_control name="ServoSystem" type="system">
+  <ros2_control name="CobotSystem" type="system">
   <hardware>
-    <plugin>cobot_hardware/servo_hardware</plugin>
-    <param name="fake_sensor_commands">true</param>
+    <plugin>mock_components/GenericSystem</plugin>
   </hardware>
 
   <joint name="joint_1">

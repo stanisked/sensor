@@ -10,6 +10,7 @@ def generate_launch_description():
         MoveItConfigsBuilder("cobot", package_name="cobot_moveit_config")
         .robot_description(file_path="config/cobot.urdf")
         .robot_description_semantic(file_path="config/cobot.srdf")
+        .trajectory_execution(file_path="config/moveit_controllers.yaml")
         .planning_pipelines(pipelines=["ompl"])
         .to_moveit_configs()
     )

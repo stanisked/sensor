@@ -23,6 +23,7 @@
 /home/stanislav/cobot_ws/install/cobot_moveit_config/share/cobot_moveit_config/launch/demo.launch.py
 /home/stanislav/cobot_ws/install/cobot_moveit_config/share/cobot_moveit_config/launch/spawn_controllers.launch.py
 /home/stanislav/cobot_ws/install/cobot_moveit_config/share/cobot_moveit_config/config/pilz_cartesian_limits.yaml
+/home/stanislav/cobot_ws/install/cobot_moveit_config/share/cobot_moveit_config/config/moveit_controllers.yaml
 /home/stanislav/cobot_ws/install/cobot_moveit_config/share/cobot_moveit_config/config/moveit.rviz
 /home/stanislav/cobot_ws/install/cobot_moveit_config/share/cobot_moveit_config/config/kinematics.yaml
 /home/stanislav/cobot_ws/install/cobot_moveit_config/share/cobot_moveit_config/config/cobot.urdf
