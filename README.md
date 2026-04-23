@@ -107,94 +107,116 @@ export ROS_DOMAIN_ID=10
 
 Если на одном устройстве `ROS_DOMAIN_ID` один, а на втором другой, узлы друг друга не увидят.
 
-### `Raspberry Pi 5` без GUI
+### Что где запускается
 
-На `Raspberry Pi 5` нет графической среды, поэтому там не нужно запускать `RViz` и GUI-launch-файлы MoveIt.
+- `Raspberry Pi 5`: `bringup`, драйверы, `ros2_control`, работа с реальным железом
+- `Huawei`: `MoveIt`, `RViz`, проверка топиков, планирование и GUI
 
-Порядок работы на `Raspberry Pi 5`:
+На `Raspberry Pi 5` нет GUI, поэтому там не нужно запускать `RViz` и GUI-launch-файлы MoveIt.
 
-1. Перейти в рабочее пространство
+### Терминал 1 на `Raspberry Pi 5`
+
+В этом терминале подготавливаем workspace и запускаем bringup:
 
 ```bash
 cd ~/cobot_ws
-```
-
-2. Забрать изменения
-
-```bash
 git pull
-```
-
-3. Собрать workspace
-
-```bash
 colcon build
-```
-
-4. Подключить окружение и выставить `ROS_DOMAIN_ID`
-
-```bash
 source /opt/ros/jazzy/setup.bash
 source ~/cobot_ws/install/setup.bash
 export ROS_DOMAIN_ID=10
-```
-
-5. Запустить bringup робота
-
-```bash
 ros2 launch cobot_bringup bringup.launch.py
 ```
 
-На `Raspberry Pi 5` обычно запускается именно bringup, драйверы, `ros2_control` и всё, что связано с реальным железом.
+Этот терминал после запуска лучше не трогать, пусть в нём продолжает работать `bringup`.
 
-### Десктоп `Huawei` с GUI
+### Терминал 2 на `Raspberry Pi 5`
 
-Порядок работы на десктопе:
-
-1. Перейти в рабочее пространство
+Во втором терминале проверяем контроллеры:
 
 ```bash
 cd ~/cobot_ws
+source /opt/ros/jazzy/setup.bash
+source ~/cobot_ws/install/setup.bash
+export ROS_DOMAIN_ID=10
+ros2 control list_controllers
 ```
 
-2. Собрать workspace после изменений
+Если `joint_state_broadcaster` и `arm_controller` уже в состоянии `active`, всё нормально.
+
+Если контроллеры не активны, можно вручную выполнить:
 
 ```bash
+ros2 control load_controller joint_state_broadcaster
+ros2 control load_controller arm_controller
+ros2 control set_controller_state joint_state_broadcaster active
+ros2 control set_controller_state arm_controller active
+```
+
+После этого снова проверить:
+
+```bash
+ros2 control list_controllers
+```
+
+### Терминал 1 на `Huawei`
+
+На десктопе подготавливаем окружение:
+
+```bash
+cd ~/cobot_ws
 colcon build
-```
-
-3. Подключить окружение и выставить тот же `ROS_DOMAIN_ID`
-
-```bash
 source /opt/ros/jazzy/setup.bash
 source ~/cobot_ws/install/setup.bash
 export ROS_DOMAIN_ID=10
 ```
 
-4. Запустить MoveIt
+После этого можно проверить, что десктоп видит Pi:
 
 ```bash
+ros2 node list
+ros2 topic list
+```
+
+### Терминал 2 на `Huawei`
+
+Если связь есть, запускаем MoveIt:
+
+```bash
+cd ~/cobot_ws
+source /opt/ros/jazzy/setup.bash
+source ~/cobot_ws/install/setup.bash
+export ROS_DOMAIN_ID=10
 ros2 launch cobot_moveit_config moveit.launch.py
 ```
 
-Если нужен полный GUI-сценарий для отладки, можно запускать:
+### Терминал 3 на `Huawei`, если нужен GUI
+
+Если нужен полный GUI-сценарий, можно запускать:
 
 ```bash
+cd ~/cobot_ws
+source /opt/ros/jazzy/setup.bash
+source ~/cobot_ws/install/setup.bash
+export ROS_DOMAIN_ID=10
 ros2 launch cobot_moveit_config demo.launch.py
 ```
 
-### Типовой сценарий совместной работы
+### Короткий сценарий целиком
 
-1. На `Raspberry Pi 5` запускается `bringup.launch.py`
-2. На `Huawei` выставляется тот же `ROS_DOMAIN_ID`
-3. На `Huawei` запускается `moveit.launch.py` или `demo.launch.py`, если нужен GUI
-4. Десктоп и `Raspberry Pi 5` обмениваются ROS 2-топиками в одном домене
+1. Открываем `Терминал 1` на `Raspberry Pi 5` и запускаем `bringup`
+2. Открываем `Терминал 2` на `Raspberry Pi 5` и проверяем `ros2 control list_controllers`
+3. Если надо, вручную активируем `joint_state_broadcaster` и `arm_controller`
+4. Открываем `Терминал 1` на `Huawei` и проверяем, что видны ROS 2-узлы и топики
+5. Открываем `Терминал 2` на `Huawei` и запускаем `moveit.launch.py`
+6. При необходимости открываем ещё один терминал на `Huawei` и запускаем `demo.launch.py`
 
 ### Короткое напоминание
 
 - `ROS_DOMAIN_ID` должен совпадать на обоих устройствах
 - `bringup` и работа с железом идут на `Raspberry Pi 5`
-- `RViz` и GUI-часть удобнее запускать на десктопе `Huawei`
+- `MoveIt` и `RViz` удобнее запускать на десктопе `Huawei`
+- после проблем с контроллерами первым делом смотри `ros2 control list_controllers`
 
 ## Проверка связи между устройствами
 
