@@ -56,6 +56,17 @@ colcon build
 source install/setup.bash
 ```
 
+### Очистка старой сборки на `Raspberry Pi 5`
+
+Если после `git pull` или смены конфигов сборка ведёт себя странно, можно очистить старые артефакты сборки и собрать workspace заново:
+
+```bash
+cd ~/cobot_ws
+rm -rf build install log
+colcon build
+source install/setup.bash
+```
+
 ### Сборка после изменений на десктопе
 
 ```bash
