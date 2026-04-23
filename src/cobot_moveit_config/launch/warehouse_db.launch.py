@@ -3,5 +3,10 @@ from moveit_configs_utils.launches import generate_warehouse_db_launch
 
 
 def generate_launch_description():
-    moveit_config = MoveItConfigsBuilder("cobot", package_name="cobot_moveit_config").to_moveit_configs()
+    moveit_config = (
+        MoveItConfigsBuilder("cobot", package_name="cobot_moveit_config")
+        .robot_description_semantic(file_path="config/cobot.srdf")
+        .trajectory_execution(file_path="config/moveit_controllers.yaml")
+        .to_moveit_configs()
+    )
     return generate_warehouse_db_launch(moveit_config)
