@@ -167,7 +167,7 @@ ros2 topic list
 
 Если список узлов и топиков приходит, значит `Huawei` видит `Raspberry Pi 5`.
 
-### Терминал 2. Запустить `MoveIt`
+### Терминал 2. Запустить обычный `MoveIt`
 
 ```bash
 cd ~/cobot_ws
@@ -178,7 +178,13 @@ export ROS_DOMAIN_ID=10
 ros2 launch cobot_moveit_config moveit.launch.py
 ```
 
-### Терминал 3. Если нужен `demo.launch.py`
+`moveit.launch.py` это основной ручной запуск. Внутри он просто подключает `move_group.launch.py`, так что дублирования логики между launch-файлами нет.
+
+### Альтернатива: `demo.launch.py` вместо обычного запуска
+
+`demo.launch.py` не нужно запускать вместе с `moveit.launch.py`.
+
+Это отдельный demo-режим, который сам поднимает `move_group`, `RViz`, `robot_state_publisher`, fake `ros2_control` и спавнеры контроллеров.
 
 ```bash
 cd ~/cobot_ws
@@ -197,8 +203,9 @@ ros2 launch cobot_moveit_config demo.launch.py
 4. На `Raspberry Pi 5` в `Терминале 1` делаем `git pull`, сборку и запускаем `bringup`.
 5. На `Raspberry Pi 5` в `Терминале 2` проверяем `ros2 control list_controllers`.
 6. На `Huawei` в `Терминале 1` проверяем, что видны узлы и топики.
-7. На `Huawei` в `Терминале 2` запускаем `moveit.launch.py`.
-8. Если нужен demo-режим, на `Huawei` в `Терминале 3` запускаем `demo.launch.py`.
+7. На `Huawei` выбираем один режим запуска:
+   - обычный: `moveit.launch.py`
+   - demo: `demo.launch.py`
 
 ## Что проверить, если что-то не работает
 
