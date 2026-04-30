@@ -15,6 +15,7 @@ setup(
     entry_points={
         'console_scripts': [
             'servo_bridge = cobot_driver.servo_bridge_node:main',
+            'wheel_driver = cobot_driver.wheel_driver_node:main',
         ],
     },
 )

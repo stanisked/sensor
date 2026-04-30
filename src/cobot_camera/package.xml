@@ -1,18 +1,16 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>cobot_driver</name>
-  <version>0.0.1</version>
-  <description>Cobot servo driver</description>
-  <maintainer email="stanislavked@gmail.com">elwis</maintainer>
+  <name>cobot_camera</name>
+  <version>0.0.0</version>
+  <description>ESP32-CAM driver for ROS2</description>
+  <maintainer email="stanislavked@gmail.com">stanislav</maintainer>
   <license>MIT</license>
-  
-  <buildtool_depend>ament_python</buildtool_depend>  
 
   <depend>rclpy</depend>
   <depend>sensor_msgs</depend>
-  <depend>std_msgs</depend>
-  <depend>geometry_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
